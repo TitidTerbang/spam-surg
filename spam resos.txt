@@ -1,0 +1,30 @@
+ext1 = "TOOLS 18/1 GO `2TKOC"
+text2 = "text"
+text3 = "text"
+text4 = "text"
+DELAY = 4000
+
+
+function sayz(message)
+SendPacket(2, "action|input\n|text|"..message)
+sleep(20)
+end
+
+function spam()
+for i=35,1,-1 do
+sayz(text1)
+sleep(DELAY)
+sayz(text2)
+sleep(DELAY)
+sayz(text3)
+sleep(DELAY)
+sayz(text4)
+sleep(DELAY)
+
+end
+sleep(300000)
+end
+
+while true do
+spam()
+end

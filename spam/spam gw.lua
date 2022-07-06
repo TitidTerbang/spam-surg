@@ -29,7 +29,7 @@ function spam()
                 say(text2)
                 sleep(DELAY)
         end
-        sendPacket(3, "action|quit_to_exit")
+        sendPacket(3,"action|join_request\nname|"..world)
         sleep(60000)
         JoinWorld()
     end
