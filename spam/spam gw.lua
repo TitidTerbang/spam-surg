@@ -28,6 +28,7 @@ function spam()
         say(text2)
         sleep(DELAY)
     end
+    sleep(60000)
 end
 
 while true do
