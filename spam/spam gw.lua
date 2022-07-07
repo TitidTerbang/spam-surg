@@ -1,6 +1,6 @@
 text1 = "TOOLS 18/1 GO `2TKOC"
 text2 = "TOOLS 18/1 GO `4TKOC"
-DELAY = 5000
+DELAY = 6000
 world = "BUYSURGS"
 outworld = "MEMEKCROT999"
 kordinatX = 58  --57
@@ -28,7 +28,7 @@ function spam()
         say(text2)
         sleep(DELAY)
     end
-    sleep(60000)
+    sleep(120000)
 end
 
 while true do
