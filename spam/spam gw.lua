@@ -1,5 +1,4 @@
 text1 = "TOOLS 19/1 GO `2TKOC"
-text2 = "TOOLS 19/1 GO `4TKOC"
 DELAY = 4000
 world = "BUYSURGS"
 outworld = "MEMEKCROT999"
@@ -8,7 +7,7 @@ kordinatY = 47  --45
 
 function JoinWorld()
     sendPacket(3,"action|join_request\nname|"..world)
-    sleep(5000)
+    sleep(4000)
 end
 
 function ccek()
@@ -23,10 +22,12 @@ function spam()
     while getBot().world == world do
         findPath(kordinatX-1, kordinatY-1)  
         sleep(1000)
-        for i=25,1,-1 do
+        for i=20,1,-1 do
                 say(text1)
                 sleep(DELAY)
-                say(text2)
+                say("/love")
+                sleep(DELAY)
+                say(text1)
                 sleep(DELAY)
         end
     end
