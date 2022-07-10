@@ -1,7 +1,6 @@
-text1 = "TOOLS 19/1 GO `2TKOC"
-DELAY = 4000
+text1 = "`0SURG TOOL 19/1 AT -- `2TKOC `0SURG TOOL 19/1 AT -- `2TKOC `0SURG TOOL 19/1 AT -- `2TKOC `0SURG TOOL 19/1 AT -- `2TKOC"
+DELAY = 3500
 world = "BUYSURGS"
-outworld = "MEMEKCROT999"
 kordinatX = 58  --57
 kordinatY = 47  --45
 
@@ -22,12 +21,10 @@ function spam()
     findPath(kordinatX-1, kordinatY-1)  
     while getBot().world == world do
         sleep(1000)
-        for i=20,1,-1 do
+        for i=17,1,-1 do
                 say(text1)
-                sleep(DELAY)
+                sleep(10000)
                 say("/love")
-                sleep(DELAY)
-                say(text1)
                 sleep(DELAY)
         end
     end
