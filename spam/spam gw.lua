@@ -22,12 +22,16 @@ function spam()
     findPath(kordinatX-1, kordinatY-1)  
     while getBot().world == world do
         sleep(1000)
-        for i=20,1,-1 do
+        for i=10,1,-1 do
+                say(text1)
+                sleep(DELAY)
+                say(text1)
+                sleep(DELAY)
+                say(text1)
+                sleep(DELAY)
                 say(text1)
                 sleep(DELAY)
                 say("/love")
-                sleep(DELAY)
-                say(text1)
                 sleep(DELAY)
         end
     end
