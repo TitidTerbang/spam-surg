@@ -1,22 +1,18 @@
 text1 = "`0SURG TOOL 21/1 AT -- `2TKOC `0SURG TOOL 21/1 AT -- `2TKOC `0SURG TOOL 21/1 AT -- `2TKOC `0SURG TOOL 21/1 AT -- `2TKOC"
-DELAY = 4000
 world = "BUYSURGS"
 outworld = "MEMEKCROT999"
 kordinatX = 61-1 --68
 kordinatY = 47-1 --45
 
-function JoinWorld()
+function join()
     sendPacket(3,"action|join_request\nname|"..world)
-    sleep(4000)
-end
-
-function ccek()
     if getBot().world == world then
+        sleep(3000)
         findPath(kordinatX, kordinatY)
-        sleep(1000)
         spam()
     else
-        JoinWorld()
+        sendPacket(3,"action|join_request\nname|"..outworld)
+        sleep(10000)
     end
 end
 
@@ -35,5 +31,5 @@ function spam()
 end
 
 while true do
-    ccek()
+    join()
 end
